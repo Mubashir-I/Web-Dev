@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+</head>
+<body>
+
+    <header>
+        <table width="100%">
+            <tr>
+                <td>
+                    <img src="logo.jpg" alt="Logo" width="50" height="50">
+                    <strong>Art-Gallery</strong>
+                </td>
+                <td align="right">
+                    <nav>
+                        <button onclick="window.location.href='gallery.html'">Gallery</button>
+                        <button onclick="window.location.href='about.html'">About</button>
+                        <button onclick="window.location.href='feedback.html'">Feedback</button>
+                        <button onclick="window.location.href='signin.html'">Logout</button>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+        <hr>
+
+        <main>
+            <h1>We Value Your Feedback</h1>
+            <p>Please let us know how we are doing so we can improve the gallery experience.</p>
+
+            <form action="gallery.html" method="GET">
+                <fieldset>
+                    <legend><strong>Overall Rating</strong></legend>
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">5 - Excellent</label><br>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">4 - Good</label><br>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">3 - Average</label><br>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">2 - Poor</label><br>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">1 - Very Bad</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><strong>What features do you like most?</strong></legend>
+                    <input type="checkbox" id="speed" name="features" value="speed">
+                    <label for="speed">Fast Loading</label><br>
+                    <input type="checkbox" id="ui" name="features" value="ui">
+                    <label for="ui">User Interface</label><br>
+                    <input type="checkbox" id="images" name="features" value="images">
+                    <label for="images">Image Quality</label>
+                </fieldset>
+
+                <br>
+
+                <div>
+                    <label for="comments"><strong>Additional Comments:</strong></label><br>
+                    <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Tell us more..."></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit" onclick="alert('Thank you for your feedback!')">Submit Feedback</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </main>
+
+        <br>
+        <hr>
+
+    <footer>
+        <table width="100%">
+            <tr>
+                <td>
+                    <h3>Contact Us</h3>
+                    <p>
+                        H-11, Islamabad<br>
+                    </p>
+                </td>
+                <td align="right">
+                    <h3>Support</h3>
+                    <p>
+                        Email: support@gallery.com<br>
+                        Phone: +92 001 234432
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <center>
+            <p>&copy; 2026 Art-gallery. All rights reserved.</p>
+        </center>
+    </footer>
+
+</body>
+</html>

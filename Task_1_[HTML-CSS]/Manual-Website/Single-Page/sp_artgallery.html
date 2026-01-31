@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo" class="logo-img">
+                <strong>Art-Gallery</strong>
+            </div>
+            <nav>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#feedback">Feedback</a>
+                <a href="signin.html" class="logout-btn">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="gallery" class="card">
+            <h1>Our Image Collection</h1>
+            <p style="text-align: center;">Welcome to your personal gallery. Here are the images stored in your folder:</p>
+            <div class="image-grid">
+                <img src="night.jpg" alt="Gallery Image 1">
+                <img src="swans.jpg" alt="Gallery Image 2">
+                <img src="sunset.jpg" alt="Gallery Image 3">
+            </div>
+        </section>
+
+        <section id="about" class="card">
+            <h1>About Art-Gallery</h1>
+            <p>
+                Founded in 2026, <strong>Art-Gallery</strong> was built on a simple idea: 
+                making digital memories accessible and beautiful for everyone.
+            </p>
+
+            <div class="about-content">
+                <div class="mission">
+                    <h2>Our Mission</h2>
+                    <ul>
+                        <li><strong>Simplicity:</strong> We keep our design clean.</li>
+                        <li><strong>Quality:</strong> High-resolution looks great.</li>
+                        <li><strong>Privacy:</strong> Your data belongs to you.</li>
+                    </ul>
+                </div>
+
+                <div class="founders">
+                    <h2>Meet the Founders</h2>
+                    <div class="founder-flex">
+                        <div class="founder">
+                            <img src="ralph.jpg" alt="founder 1 ralph">
+                            <p><strong>Ralph</strong><br>CEO</p>
+                        </div>
+                        <div class="founder">
+                            <img src="jim.jpg" alt="founder 2 jim">
+                            <p><strong>Jim</strong><br>Lead Photographer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback" class="card">
+            <h1>We Value Your Feedback</h1>
+            <form action="gallery.html" method="GET">
+                <div class="form-container">
+                    <fieldset>
+                        <legend>Overall Rating</legend>
+                        <label><input type="radio" name="rating" value="5"> 5 - Excellent</label>
+                        <label><input type="radio" name="rating" value="4"> 4 - Good</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Favorite Features</legend>
+                        <label><input type="checkbox" name="features" value="speed"> Fast Loading</label>
+                        <label><input type="checkbox" name="features" value="ui"> User Interface</label>
+                    </fieldset>
+
+                    <div class="textarea-group">
+                        <label for="comments"><strong>Additional Comments:</strong></label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Tell us more..."></textarea>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="btn-submit" onclick="alert('Thank you!')">Submit</button>
+                        <button type="reset" class="btn-reset">Clear</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Contact Us</h3>
+                <p>H-11, Islamabad</p>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <p>Email: support@gallery.com</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Art-gallery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
